@@ -1,0 +1,57 @@
+<html>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="./static/mywebscript.js"></script>
+    <style>
+        .card {
+            width: 500px;
+            margin: 50px auto;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+        .form-label {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+        .form-control {
+            height: 150px;
+            margin-bottom: 25px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            padding: 25px;
+        }
+        .btn {
+            width: 150px;
+            margin: 25px;
+            border-radius: 10px;
+            font-weight: bold;
+            background-color: #2fa29d;
+        }
+        #translated_text {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 25px;
+            padding: 25px;
+            border-radius: 10px;
+            background-color: #f2f2f2;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+    </style>
+    <div class="card">
+        <div class="card-body">
+            <div class="mb-3">
+                <label class="form-label">Text to be translated</label>
+                <input type="textarea" class="form-control" id="textToTranslate">
+            </div>
+
+            <div>
+                <button onclick="translateToFrench()" class="btn btn-secondary">Translate to French</button>
+                <button onclick="translateToEnglish()" class="btn btn-secondary">Translate to English</button>
+            </div>
+
+            <div id="translated_text"></div>
+        </div>
+    </div>
+</html>
